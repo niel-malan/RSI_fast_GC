@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="199.80249mm"
+   height="108.71176mm"
+   viewBox="0 0 199.80249 108.71176"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="ResistanceMeasurement.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.88902247"
+     inkscape:cx="403.5557"
+     inkscape:cy="168.47204"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-center="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="61.5712,65.010623"
+       orientation="1,0"
+       id="guide819"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid821"
+       originx="-9.6425543"
+       originy="-108.88344" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.642554,-79.404797)">
+    <g
+       id="g1034"
+       transform="translate(0,9.7809847)">
+      <circle
+         transform="rotate(-90)"
+         r="16.019241"
+         cy="110.86672"
+         cx="-156.51254"
+         id="path817"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.36500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         transform="rotate(-90)"
+         id="text841"
+         y="101.6063"
+         x="-156.52908"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="101.6063"
+           x="-156.52908"
+           id="tspan839"
+           sodipodi:role="line">+</tspan></text>
+      <text
+         id="text845"
+         y="156.11153"
+         x="122.38023"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="156.11153"
+           x="122.38023"
+           id="tspan843"
+           sodipodi:role="line">_</tspan></text>
+      <text
+         id="text849"
+         y="188.05455"
+         x="110.78611"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="188.05455"
+           x="110.78611"
+           id="tspan847"
+           sodipodi:role="line">0-20VDC</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccc"
+         inkscape:connector-curvature="0"
+         d="M 94.99172,156.51255 H 10.325054 V 87.72088 h 14.552084 l 5.291666,-7.9375 7.9375,15.875 7.9375,-15.875 6.614583,15.875 6.614583,-15.875 7.9375,15.875 3.96875,-7.9375 v 0 h 18.52083 l 3.96876,-7.9375 7.9375,15.875 7.9375,-15.875 6.61458,15.875 6.61458,-15.875 7.9375,15.875 3.96875,-7.9375 v 0 h 13.22917 l 5.29167,-7.9375 7.9375,15.875 7.9375,-15.875 6.61458,15.875 6.61458,-15.875 7.9375,15.875 3.96875,-7.9375 v 0 h 14.55208 v 68.79167 h -82.02083"
+         style="fill:none;stroke:#000000;stroke-width:1.36500001;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path857" />
+      <text
+         id="text861"
+         y="105.98646"
+         x="111.91028"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="105.98646"
+           x="111.91028"
+           id="tspan859"
+           sodipodi:role="line">R<tspan
+   id="tspan863"
+   style="font-size:64.99999762%;baseline-shift:sub">col</tspan></tspan></text>
+      <text
+         id="text867"
+         y="106.1262"
+         x="170.77448"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="106.1262"
+           x="170.77448"
+           id="tspan865"
+           sodipodi:role="line">R<tspan
+   id="tspan869"
+   style="font-size:64.99999762%;baseline-shift:sub">ref</tspan></tspan></text>
+      <text
+         id="text873"
+         y="105.88972"
+         x="47.752945"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="105.88972"
+           x="47.752945"
+           id="tspan871"
+           sodipodi:role="line">R<tspan
+   id="tspan875"
+   style="font-size:64.99999762%;baseline-shift:sub">bal</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="10.583333"
+       y="101.20833"
+       id="text928"><tspan
+         sodipodi:role="line"
+         id="tspan926"
+         x="10.583333"
+         y="108.98873"
+         style="stroke-width:0.26458332" /></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.36500001;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1013"
+       width="254"
+       height="158.75"
+       x="-10.583333"
+       y="64.166664" />
+  </g>
+</svg>
