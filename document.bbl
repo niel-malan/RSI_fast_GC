@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{31}%
+\begin{thebibliography}{34}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -311,18 +311,48 @@
   {\bibinfo  {journal} {Analytical chemistry}\ }\textbf {\bibinfo {volume}
   {78}},\ \bibinfo {pages} {2051} (\bibinfo {year} {2006})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {{Zip Scientific}}()}]{ZipScientific}%
+\bibitem [{\citenamefont {Luong}\ \emph {et~al.}(2006)\citenamefont {Luong},
+  \citenamefont {Gras}, \citenamefont {Mustacich},\ and\ \citenamefont
+  {Cortes}}]{Luong2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Luong}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Gras}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mustacich}}, \ and\
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Cortes}},\ }\href
+  {\doibase 10.1093/chromsci/44.5.253} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Chromatographic Science}\ }\textbf {\bibinfo {volume}
+  {44}},\ \bibinfo {pages} {253} (\bibinfo {year} {2006})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Zip Scientific}}(2008)}]{ZipScientific2008}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Zip Scientific}}},\
-  }\href {http://www.zipsci.com/gcchaser.htm} {\enquote {\bibinfo {title} {{GC
-  Chaser} - {Zip Scientific}},}\ }\bibinfo {howpublished}
-  {http://www.zipsci.com/gcchaser.htm},\ \bibinfo {note} {accessed:
-  2015-07-16}\BibitemShut {NoStop}%
+  }\href {http://www.zipsci.com/chaser-cool-down.htm} {\enquote {\bibinfo
+  {title} {Fast cooling performance},}\ } (\bibinfo {year} {2008})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Dallüge}\ \emph {et~al.}(1999)\citenamefont
+  {Dallüge}, \citenamefont {Ou-Aissa}, \citenamefont {Vreuls}, \citenamefont
+  {Brinkman},\ and\ \citenamefont {Veraart}}]{Dalluege1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Dallüge}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Ou-Aissa}},
+  \bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont {Vreuls}}, \bibinfo
+  {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont {Brinkman}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Veraart}},\ }\href {\doibase
+  10.1002/(SICI)1521-4168(19990801)22:8<459::AID-JHRC459>3.0.CO;2-G} {\bibfield
+   {journal} {\bibinfo  {journal} {Journal of High Resolution Chromatography}\
+  }\textbf {\bibinfo {volume} {22}},\ \bibinfo {pages} {459} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{VICI AG International}}(2019)}]{VICIAGI2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{VICI AG
+  International}}},\ }\href {https://vici.com/gc/FTP-200.php} {\enquote
+  {\bibinfo {title} {Multichannel fast temperature programmer},}\ } (\bibinfo
+  {year} {2019})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Peacock}(2008)}]{Peacock2008}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
   {Peacock}},\ }\href {http://www.pidtuning.net} {\enquote {\bibinfo {title}
-  {Pid tuning blueprint},}\ }\bibinfo {howpublished} {Internet} (\bibinfo
+  {{PID} tuning blueprint},}\ }\bibinfo {howpublished} {Internet} (\bibinfo
   {year} {2008})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zheng}\ \emph {et~al.}(2012)\citenamefont {Zheng},
   \citenamefont {Bo}, \citenamefont {Liu},\ and\ \citenamefont
@@ -368,7 +398,10 @@
   {2001})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {AOCS}(2017)}]{AOCS2017}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibnamefont {AOCS}},\ }\href@noop {}
-  {\enquote {\bibinfo {title} {{AOCS} official method {Ce} 2-66},}\ } (\bibinfo
-  {year} {2017})\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {AOCS}},\ }\enquote
+  {\bibinfo {title} {{AOCS} official method {Ce} 2-66},}\ in\ \href@noop {}
+  {\emph {\bibinfo {booktitle} {Official Methods and Recommended Practices of
+  the AOCS}}}\ (\bibinfo  {publisher} {{A}merican {O}il {C}hemists'
+  {S}ociety},\ \bibinfo {year} {2017})\ \bibinfo {edition} {7th}\
+  ed.\BibitemShut {Stop}%
 \end{thebibliography}%

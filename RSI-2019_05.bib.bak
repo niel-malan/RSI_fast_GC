@@ -1892,11 +1892,32 @@ aerospace, personal power and micro power generation.},
   publisher = {Elsevier {BV}},
 }
 
-@WWW{,
+@WWW{ZipScientific2008,
   author = {{Zip Scientific}},
   title  = {Fast Cooling Performance},
   year   = {2008},
   url    = {http://www.zipsci.com/chaser-cool-down.htm},
+}
+
+@WWW{VICIAGI2019,
+  author  = {{VICI AG International}},
+  title   = {Multichannel Fast Temperature Programmer},
+  year    = {2019},
+  url     = {https://vici.com/gc/FTP-200.php},
+  urldate = {2019-08-15},
+}
+
+@Article{Luong2006,
+  author    = {J. Luong and R. Gras and R. Mustacich and H. Cortes},
+  title     = {Low Thermal Mass Gas Chromatography: Principles and Applications},
+  journal   = {Journal of Chromatographic Science},
+  year      = {2006},
+  volume    = {44},
+  number    = {5},
+  month     = {may},
+  pages     = {253--261},
+  doi       = {10.1093/chromsci/44.5.253},
+  publisher = {Oxford University Press ({OUP})},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
