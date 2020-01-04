@@ -1,0 +1,266 @@
+% Title:    A LaTeX Template For Responses To a Referees' Reports
+% Author:   Petr Zemek <s3rvac@gmail.com>
+% Homepage: https://blog.petrzemek.net/2016/07/17/latex-template-for-responses-to-referees-reports/
+% License:  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+\documentclass[10pt]{article}
+
+% Allow Unicode input (alternatively, you can use XeLaTeX or LuaLaTeX)
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{eurosym}
+\usepackage{textcomp}
+
+\usepackage{microtype,xparse,tcolorbox}
+\newenvironment{reviewer-comment }{}{}
+\tcbuselibrary{skins}
+\tcolorboxenvironment{reviewer-comment }{empty,
+  left = 1em, top = 1ex, bottom = 1ex,
+  borderline west = {2pt} {0pt} {black!20},
+}
+\ExplSyntaxOn
+\NewDocumentEnvironment {response} { +m O{black!20} } {
+  \IfValueT {#1} {
+    \begin{reviewer-comment~}
+      \setlength\parindent{2em}
+      \noindent
+      \ttfamily #1
+    \end{reviewer-comment~}
+  }
+  \par\noindent\ignorespaces
+} { \bigskip\par }
+
+\NewDocumentCommand \Reviewer { m } {
+  \section*{Comments~by~Reviewer~#1}
+}
+\ExplSyntaxOff
+\AtBeginDocument{\maketitle\thispagestyle{empty}\noindent}
+
+% You can get probably get rid of these definitions:
+\newcommand\meta[1]{$\langle\hbox{#1}\rangle$}
+\newcommand\PaperTitle[1]{``\textit{#1}''}
+
+\title{Response letter of \meta{RSI19-AR-01677} \\
+  Based on the Referees' Report}
+\author{D. Malan \and S.J. van der Walt \and E.R. Rohwer}
+\date{\today}
+
+\begin{document}
+
+\noindent
+\textbf{Chin-Tu Chen}\\
+\textbf{Associate Editor}\\
+\textbf{Review of Scientific Instruments}
+
+\medskip
+
+\begin{quote}
+Revision of the paper \meta{RSI19-AR-01677} submitted to the Review of
+Scientific Instruments, entitled \PaperTitle{A high-repetition-rate, fast
+temperature programmed gas chromatograph and its on-line coupling to a
+supercritical fluid chromatograph (SFC×GC)}, based on the referees' report.
+\end{quote}
+
+\medskip
+
+\noindent
+Dear Chin-Tu Chen: 
+
+Thank you for your email dated 7 November 2019 enclosing the reviewers’ comments. We
+have carefully reviewed the comments and have revised the manuscript accordingly. Our
+responses are given in a point-by-point manner below. 
+
+We hope the revised version is now suitable for publication and look forward to hearing from you
+in due course.
+
+\vspace{\baselineskip}
+
+\noindent
+Yours sincerely,\\
+D. Malan\\
+Department of Chemistry\\
+University of Pretoria
+
+
+\Reviewer{\#1}
+\begin{response}{Abstract, last line: the sentence fragment 'separating fatty information" needs revision.
+	}
+ 	The sentence was revised and clarified.
+\end{response}
+
+\begin{response}{p3, orthogonal and general elution problem. In trying to wrap
+my head around this argument, I can't help but think that despite their comment
+about GC×GC wrap-around, it does seem that this would be even more of a problem
+in their current setup or those using LC-GC. The authors miss the opportunity to
+justify the need for fast temperature programmed GC in their second dimension.
+Perhaps laying their arguments out in more detail here would be useful.
+} 
+The problem with the vagueness of the argument was identified. The paragraphs
+were changed to clarify how the general elution problem applies to
+multidimensional chromatography, and to emphasize that SFC×GC demands
+temperature programming in the GC dimension.
+\end{response}
+
+\begin{response}{p6 last line, sentence structure needs revision.
+	}  The sentence was revised and clarified.
+\end{response}
+
+\begin{response}{p7, description of the connection blocks. Refer the reader to see Figure 1 here. 
+	}  A reference to Figure 1 was added.
+\end{response}
+
+\begin{response}{Also, singular-plural confusion in :"These blocks fulfilled three roles: It (1) sealed ... "
+	}  
+	The confusion was cleared up. 
+\end{response}
+
+\begin{response}{Figure 1. It is not clear from the drawing that the cryogenic
+coolant actually enters the heater tube. While the dimensions of the drawing are
+perhaps selected to be according to scale, the reader would benefit from a
+little artistic liberty here. (g) "electrical connection" is a little vague.
+	} The figure was changed to add a schematic diagram that illustrate the coolant
+	flow, and the caption was clarified.
+\end{response}
+
+\begin{response}{p9. Reference resistor and ballast resistor. What are the
+dimensions of the wires used to construct these resistors? What is the
+resistance of the ballast? 
+	} 
+	The requested details were added, as well as a figure that shows the construction of the relevant resistors.
+\end{response}
+
+\begin{response}{p13, A. Heating uniformity. Text says video is shown in
+Figure3. Figure 3 is a screen capture of the video shown in Supplemental
+Material. Correct accordingly.
+	}
+	We recognize the inaccuracy, and the text was corrected. 
+\end{response}
+
+\begin{response}{ p13. Gradients by cooling. Not sure how this statement
+accurately reflects the repeated heating cycles shown in Figure 4. Further
+information and a more detailed description of Figure 4 is required. Does the
+difference between the two calibration points along the length of the column (33
+and 66 cm) increase with temperature? 
+	}  
+	The discussion on the gradients measured by thermocouple was revised and expanded for greater clarity. 
+\end{response}
+
+\begin{response}{Figure 5. Explain in the heading the blue and red lines.
+	}  
+	The caption was revised with a better description that includes an explanation of the colours.
+\end{response}
+
+\begin{response}{Figure 2. Can be improved by showing more details of the
+circuit, rather than just three resistors in series.
+	}  The figure was replaced by a more detailed one, and the description in the text was adapted to match the figure.   
+\end{response}
+
+\begin{response}{A few references appear incomplete. e.g. 17 and 29.}  
+	The bibliography was reviewed and all the incomplete references were updated.
+\end{response}
+
+\Reviewer{\#2}
+
+\begin{response}{p1 Abstract, sentence change: We demonstrate the fast
+chromatograph by separating fatty acid methyl esters by carbon number, which
+would be useful in the food and biodiesel industries.
+	}  
+	The sentence was clarified. 
+\end{response}
+
+\begin{response}{p2: This concept is called comprehensively coupled
+chromatography. For example, in comprehensively coupled gas chromatography
+(GC×GC). Confirm correct nomenclature in as published by Marriot in LCGC 2012.
+	} We thank the reviewers for drawing attention to using correct nomenclature. We
+	revised the manuscript to ensure the recommended nomenclature was used throughout.
+\end{response}
+
+\begin{response}{p2 Sentence change: The use of narrow-bore columns and thin
+films reduce run times by improving mass transfer between the mobile and
+stationary phases, resulting in analytes spending more time in the mobile phase
+allowing shorter retention times.
+
+	} We agree that the sentence needed clarification, but disagree with the
+	explanation. Improved mass transfer does not allow analytes to spend more time
+	in the mobile phase, but it does reduce peak broadening.  The sentence was
+	revised thusly: \textit{Typically, short columns and high carrier flows rates
+	are used, which reduce retention times by reducing void times. Resolution can be
+	maintained at even higher gas flows by using narrow-bore columns and thin films:
+	these improve the mass transfer rate between the mobile and stationary phases,
+	which reduces peak broadening by bringing the analyte exchange between the
+	phases closer to equilibrium at higher-than-optimum carrier gas velocities.}
+
+\end{response}
+
+\begin{response}{p3 sentence change: it becomes unlikely that one set of
+acceptable operating conditions (temperature, flow and stationary phase) will
+give acceptable (fast enough and with adequate resolution) separation in both
+dimensions.
+	}  This sentence was revised as part of general improvement in the argument.
+	(See Reviewer 1, comment ``p.3'')
+\end{response}
+
+\begin{response}{p3 sentence change: so late that the next modulation period has
+already started before its elution and the peak only appears on the next 2D
+chromatogram 
+	}  The sentence was revised as suggested.
+\end{response}
+
+\begin{response}{p3 sentence change: If wraparound is a problem in GC×GC, it
+becomes inevitable in SFC×GC since the first dimension (SFC) does not normally
+separate compounds in a way that correlates with vapour pressure.
+	}  This sentence was improved by revising the paragraph. 
+\end{response}
+
+\begin{response}{p5 sentence change: The Zip ScienticTM solution operates by forced convection.}  
+	The sentence was changed to the suggested one. 
+\end{response}
+
+\begin{response}{p5: sentence change: In our case we applied it as a fast second
+dimension separation, comprehensively coupled to a supercritical fluid
+chromatograph.
+	}  The sentence was changed to the suggested one. 
+\end{response}
+
+\begin{response}{p6 clarification: clarify what type of static restriction was
+used.
+	}  The description of the static restrictor was improved. 
+\end{response}
+
+\begin{response}{p6: sentence change: the stop valve opens and the SFC eluate
+exits the restrictor into the hot splitless inlet of the GC, where it evaporates
+and is transported onto the GC column.
+	}  This sentence was improved by rewriting the paragraph. 
+\end{response}
+
+\begin{response}{p6: sentence change: which of course means the start of the
+temperature program, which desorbs the analyteS trapped on the head of the cold
+column.
+	}  This sentence was improved by rewriting the paragraph.
+\end{response}
+
+\begin{response}{p7: sentence change: The split vent valve was disconnected from
+the gas chromatograph CONTROL and CONNECTED TO the control computer described
+below 
+	}  The sentence was changed to the suggested one. 
+\end{response}
+
+\begin{response}{p10: Figure 2: Figure do not contain that much detail and may
+be omitted.
+	}  The figure was replace by a more detailed one, and the text adapted to match
+	the figure. (See Reviewer 1, comment ``Figure 2'')
+\end{response}
+
+\begin{response}{p12: abbreviation: LabVIEW 7.1TM (National Instruments). This
+abbreviation was used earlier p10 and should be clarified there.
+	}  We recognize the oversight and corrected it.
+\end{response}
+
+\begin{response}{p15: sentence change: In the instrument presented here, THE
+power was limited by the voltage output range of the DAC of the data acquisition
+board, and not by the power of the heater.
+	}  The sentence was replaced by the suggested one.
+\end{response}
+
+
+\end{document}
+

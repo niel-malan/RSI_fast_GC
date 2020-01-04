@@ -1,15 +1,42 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
 The style file: aipnum4-1.bst
-Database file #1: documentNotes.bib
-Database file #2: RSI-2019_05.bib
-Warning--entry type for "Peacock2008" isn't style-file defined
---line 42 of file RSI-2019_05.bib
-Warning--entry type for "ZipScientific2008" isn't style-file defined
---line 1896 of file RSI-2019_05.bib
-Warning--entry type for "VICIAGI2019" isn't style-file defined
---line 1903 of file RSI-2019_05.bib
-control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
-control{aip41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{}, control.pages{0}, control.year{N/A}, control.eprint{N/A}, 
+I found no \bibdata command---while reading file document.aux
+Warning--I didn't find a database entry for "Watson1991"
+Warning--I didn't find a database entry for "He2014"
+Warning--I didn't find a database entry for "Hupp2018"
+Warning--I didn't find a database entry for "Chen2014"
+Warning--I didn't find a database entry for "Dong2017"
+Warning--I didn't find a database entry for "Gorska-Horczyczak2017"
+Warning--I didn't find a database entry for "White2015"
+Warning--I didn't find a database entry for "Liu1991"
+Warning--I didn't find a database entry for "Seeley2013"
+Warning--I didn't find a database entry for "Prebihalo2018"
+Warning--I didn't find a database entry for "Cramers1999"
+Warning--I didn't find a database entry for "Korytar2002"
+Warning--I didn't find a database entry for "Giddings1995"
+Warning--I didn't find a database entry for "Camenzuli2014"
+Warning--I didn't find a database entry for "Koning2004"
+Warning--I didn't find a database entry for "Venter2004"
+Warning--I didn't find a database entry for "Skoog2007"
+Warning--I didn't find a database entry for "Dalluege2003"
+Warning--I didn't find a database entry for "Venter1999"
+Warning--I didn't find a database entry for "Blumberg2000"
+Warning--I didn't find a database entry for "Wang2012"
+Warning--I didn't find a database entry for "Jacobs2013"
+Warning--I didn't find a database entry for "Chow2017"
+Warning--I didn't find a database entry for "Venter2006"
+Warning--I didn't find a database entry for "Luong2006"
+Warning--I didn't find a database entry for "ZipScientific2008"
+Warning--I didn't find a database entry for "Dalluege1999"
+Warning--I didn't find a database entry for "VICIAGI2019"
+Warning--I didn't find a database entry for "Peacock2008"
+Warning--I didn't find a database entry for "Zheng2012"
+Warning--I didn't find a database entry for "Possolo2017"
+Warning--I didn't find a database entry for "Shellie2002"
+Warning--I didn't find a database entry for "Smith2001"
+Warning--I didn't find a database entry for "AOCS2017"
+Warning--I didn't find a database entry for "REVTEX41Control"
+Warning--I didn't find a database entry for "aip41Control"
 Warning--jnrlst (dependency: not reversed) set 1
 merlin.mbs aipnum4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
@@ -19,5 +46,4 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-Warning--empty chapter and pages in AOCS2017
-(There were 5 warnings)
+(There was 1 error message)
