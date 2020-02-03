@@ -159,7 +159,7 @@ separation, then the $^2$D separation will run into the \textit{general elution
 problem}\cite{Skoog2007}: the higher the orthogonality, the more diverse the
 compounds found in each $^1$D fraction, and it becomes increasingly unlikely
 that one set of acceptable operating conditions (temperature, flow and
-stationary phase) will an give acceptable (fast enough and with adequate
+stationary phase) will an give an acceptable (fast enough and with adequate
 resolution) $^2$D separation. In GC×GC as it is practised today this has become
 a real problem, known as \textit{wraparound}, a well-known
 phenomenon\cite{Dalluege2003}. Wraparound happens when a peak or peaks elute
@@ -362,9 +362,10 @@ through the width of the block allowed the fitting of four \SI{220}{\volt},
 \SI{100}{\watt} heater cartridges (Hotset), providing each of the two blocks
 \SI{400}{\watt} of heating.  The chromatographic capillary column entered the
 T-piece block via the bottom port with the coaxial heater tube and passed out
-through the top port (where a micro-union using a metal ferrule
+through the top port, where a micro-union using a metal ferrule
 (Restek\texttrademark{} SilTite $\mu$-Union Connectors) brazed to the block
-created a seal to contain the coolant) and into the inlet or detector.
+created a seal to contain the coolant. From the top port the the column crossed
+a small, electrically isolating air gap before entering the inlet or detector.
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{T-Piece.eps}
@@ -417,7 +418,7 @@ chromatograph and the SFC front-end was developed in-house. A controlled direct
 current was used to heat the coaxial heater. The heating circuit consisted of
 the coaxial heater in series with a reference resistor and a ballast resistor.
 The reference and ballast resistors were constructed from stainless steel wire
-with a diameter of \SI{0.5}{\milli\metre}. The reference resistor had multiple,
+with a diameter of \SI{1.0}{\milli\metre}. The reference resistor had multiple,
 parallel conductors, the ballast resistor had a bifilar winding, and both had
 air cores. These designs (see Figure \ref{fig:RefRes}) minimized electromagnetic
 interference and encouraged heat dissipation. Since the coaxial heater
@@ -470,7 +471,7 @@ a PID controller implemented in LabVIEW 7.1\texttrademark{} (National
 Instruments). The process variable was the temperature of the coaxial heater, as
 calculated from its electrical resistance, and the set value was determined by
 the desired chromatographic temperature program. The manipulated variable was
-the voltage of the digital-to-analog converter converter (DAC) of the data
+the voltage of the digital-to-analog converter (DAC) of the data
 acquisition board. The final stage was an electronic system, where the voltage
 applied to the coaxial heater was the process variable, and the set value was a
 voltage provided by the DAC. The manipulated variable was the base current of
@@ -586,9 +587,11 @@ that the two thermocouples reported different temperatures and that the
 difference changed during the heating, implying that the coaxial heater did not
 cool or heat perfectly uniformly. But the temperature differences between the
 two points were small (approximately \SI{10}{\celsius} at most), stable, and
-repeatable and should not prevent good chromatography. These data also show that
-ballistic heating is not repeatable enough for gas chromatography, as can be
-seen in the variation in temperatures at the end of the heating runs.
+repeatable and should not prevent good chromatography. In fact, a small
+longitudinal gradient, with the lower temperature nearer the detector, will
+produce sharper peaks\cite{Contreras2013}. These data also show that ballistic
+heating is not repeatable enough for gas chromatography, as can be seen in the
+variation in temperatures at the end of the heating runs.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{cp.pdf}%
@@ -818,15 +821,18 @@ laboratory supplied with consumables.
 % Create the reference section using BibTeX:
 %\bibliography{RSI-2019_05}
 % Run this once to generate your BBL file. Then copy the contents of your BBL file into your main latex file, commenting out "\bibliography"
-%merlin.mbs aipnum4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BBL file contents start
+%aipnum4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 %Control: key (0)
 %Control: author (8) initials jnrlst
 %Control: editor formatted (1) identically to author
-%Control: production of article title (-1) disabled
-%Control: page (0) single
+%Control: production of article title (0) allowed
+%Control: page (1) range
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{34}%
+\begin{thebibliography}{35}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -858,7 +864,7 @@ laboratory supplied with consumables.
 \providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
 \providecommand \urlprefix  [0]{URL }%
 \providecommand \Eprint [0]{\href }%
-\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \doibase [0]{https://doi.org/}%
 \providecommand \selectlanguage [0]{\@gobble}%
 \providecommand \bibinfo  [0]{\@secondoftwo}%
 \providecommand \bibfield  [0]{\@secondoftwo}%
@@ -874,21 +880,24 @@ laboratory supplied with consumables.
   {Staples}(1991)}]{Watson1991}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Watson}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Horton}}, \
-  and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Staples}},\ }in\
-  \href {\doibase 10.1109/ULTSYM.1991.234175} {\emph {\bibinfo {booktitle}
-  {IEEE 1991 Ultrasonics Symposium,}}},\ Vol.~\bibinfo {volume} {1}\ (\bibinfo
-  {year} {1991})\ pp.\ \bibinfo {pages} {305--309}\BibitemShut {NoStop}%
+  {Watson}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Horton}},\
+  and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Staples}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Gas chromatography utilizing
+  saw sensors},}\ }in\ \href {https://doi.org/10.1109/ULTSYM.1991.234175}
+  {\emph {\bibinfo {booktitle} {IEEE 1991 Ultrasonics Symposium,}}},\
+  Vol.~\bibinfo {volume} {1}\ (\bibinfo {year} {1991})\ pp.\ \bibinfo {pages}
+  {305--309}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {He}, \citenamefont {Liu},\ and\ \citenamefont
   {Liu}(2014)}]{He2014}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {He}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Liu}}, \ and\
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Liu}},\ }in\ \href
-  {\doibase 10.1109/SPAWDA.2014.6998526} {\emph {\bibinfo {booktitle}
-  {Proceedings of the 2014 Symposium on Piezoelectricity, Acoustic Waves, and
-  Device Applications}}}\ (\bibinfo {year} {2014})\ pp.\ \bibinfo {pages}
-  {59--64}\BibitemShut {NoStop}%
+  {He}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Liu}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Liu}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Research progress of saw gas
+  charomatography},}\ }in\ \href {https://doi.org/10.1109/SPAWDA.2014.6998526}
+  {\emph {\bibinfo {booktitle} {Proceedings of the 2014 Symposium on
+  Piezoelectricity, Acoustic Waves, and Device Applications}}}\ (\bibinfo
+  {year} {2014})\ pp.\ \bibinfo {pages} {59--64}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hupp}\ \emph {et~al.}(2018)\citenamefont {Hupp},
   \citenamefont {Perron}, \citenamefont {Roques}, \citenamefont {Crandall},
   \citenamefont {Ramos},\ and\ \citenamefont {Rohrback}}]{Hupp2018}%
@@ -897,11 +906,14 @@ laboratory supplied with consumables.
   {Hupp}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Perron}},
   \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Roques}}, \bibinfo
   {author} {\bibfnamefont {J.}~\bibnamefont {Crandall}}, \bibinfo {author}
-  {\bibfnamefont {S.}~\bibnamefont {Ramos}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {B.}~\bibnamefont {Rohrback}},\ }\href {\doibase
-  https://doi.org/10.1016/j.fuel.2018.05.102} {\bibfield  {journal} {\bibinfo
-  {journal} {Fuel}\ }\textbf {\bibinfo {volume} {231}},\ \bibinfo {pages} {264
-  } (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+  {\bibfnamefont {S.}~\bibnamefont {Ramos}},\ and\ \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Rohrback}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Analysis of biodiesel-diesel blends using ultrafast gas
+  chromatography (ufgc) and chemometric methods: Extending astm d7798 to
+  biodiesel},}\ }\href
+  {https://doi.org/https://doi.org/10.1016/j.fuel.2018.05.102} {\bibfield
+  {journal} {\bibinfo  {journal} {Fuel}\ }\textbf {\bibinfo {volume} {231}},\
+  \bibinfo {pages} {264 -- 270} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2014)\citenamefont {Chen},
   \citenamefont {Zhang}, \citenamefont {Liu}, \citenamefont {Chen},
   \citenamefont {Piao}, \citenamefont {Zhang}, \citenamefont {Wu},
@@ -920,11 +932,13 @@ laboratory supplied with consumables.
   {\bibfnamefont {Y.~C.}\ \bibnamefont {Zou}}, \bibinfo {author} {\bibfnamefont
   {X.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont
   {D.}~\bibnamefont {Wan}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Wang}}, \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yan}},\
-  }\href {\doibase 10.1093/bja/aeu193} {\bibfield  {journal} {\bibinfo
-  {journal} {British Journal of Anaesthesia}\ }\textbf {\bibinfo {volume}
-  {113}},\ \bibinfo {pages} {807} (\bibinfo {year} {2014})}\BibitemShut
-  {NoStop}%
+  {Wang}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yan}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Gas chromatograph-surface
+  acoustic wave for quick real-time assessment of blood/exhaled gas ratio of
+  propofol in humans}},}\ }\href {https://doi.org/10.1093/bja/aeu193}
+  {\bibfield  {journal} {\bibinfo  {journal} {British Journal of Anaesthesia}\
+  }\textbf {\bibinfo {volume} {113}},\ \bibinfo {pages} {807--814} (\bibinfo
+  {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Dong}\ \emph {et~al.}(2017)\citenamefont {Dong},
   \citenamefont {Zhang}, \citenamefont {Wang}, \citenamefont {Wang},
   \citenamefont {Guo}, \citenamefont {Kanhar}, \citenamefont {Chen},
@@ -939,11 +953,14 @@ laboratory supplied with consumables.
   {G.~M.}\ \bibnamefont {Kanhar}}, \bibinfo {author} {\bibfnamefont
   {J.}~\bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Liu}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Zhou}}, \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Yan}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {X.}~\bibnamefont {Chen}},\ }\href {\doibase
-  10.1016/j.chroma.2017.05.001} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Chromatography A}\ }\textbf {\bibinfo {volume} {1506}},\ \bibinfo
-  {pages} {93} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {M.}~\bibnamefont {Yan}},\ and\ \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Chen}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Simultaneous on-line monitoring of propofol and
+  sevoflurane in balanced anesthesia by direct resistive heating gas
+  chromatography}},}\ }\href {https://doi.org/10.1016/j.chroma.2017.05.001}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Chromatography A}\
+  }\textbf {\bibinfo {volume} {1506}},\ \bibinfo {pages} {93--100} (\bibinfo
+  {year} {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Górska-Horczyczak}\ \emph
   {et~al.}(2017)\citenamefont {Górska-Horczyczak}, \citenamefont
   {Wojtasik-Kalinowska}, \citenamefont {Guzek}, \citenamefont {Sun},\ and\
@@ -952,38 +969,46 @@ laboratory supplied with consumables.
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
   {Górska-Horczyczak}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
   {Wojtasik-Kalinowska}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Guzek}}, \bibinfo {author} {\bibfnamefont {D.-W.}\ \bibnamefont {Sun}}, \
+  {Guzek}}, \bibinfo {author} {\bibfnamefont {D.-W.}\ \bibnamefont {Sun}},\
   and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Wierzbicka}},\
-  }\href {\doibase 10.1111/jfpe.12540} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Food Process Engineering}\ }\textbf {\bibinfo {volume}
-  {40}},\ \bibinfo {pages} {e12540} (\bibinfo {year} {2017})},\ \Eprint
-  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/jfpe.12540}
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Differentiation of
+  chill-stored and frozen pork necks using electronic nose with ultra-fast gas
+  chromatography},}\ }\href {https://doi.org/10.1111/jfpe.12540} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Food Process Engineering}\
+  }\textbf {\bibinfo {volume} {40}},\ \bibinfo {pages} {e12540} (\bibinfo
+  {year} {2017})},\ \Eprint
+  {https://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/jfpe.12540}
   {https://onlinelibrary.wiley.com/doi/pdf/10.1111/jfpe.12540} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {White}(2015)}]{White2015}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~L.}\ \bibnamefont
-  {White}},\ }\href
+  {White}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Evolved gas
+  composition monitoring by repetitive injection gas chromatography},}\ }\href
   {http://www.sciencedirect.com/science/article/pii/S0021967315010791}
   {\bibfield  {journal} {\bibinfo  {journal} {Journal of Chromatography A}\
-  }\textbf {\bibinfo {volume} {1421}},\ \bibinfo {pages} {129} (\bibinfo {year}
-  {2015})}\BibitemShut {NoStop}%
+  }\textbf {\bibinfo {volume} {1421}},\ \bibinfo {pages} {129--136} (\bibinfo
+  {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Liu}\ and\ \citenamefont {Phillips}(1991)}]{Liu1991}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
   {Liu}}\ and\ \bibinfo {author} {\bibfnamefont {J.~B.}\ \bibnamefont
-  {Phillips}},\ }\href {\doibase 10.1093/chromsci/29.6.227} {\bibfield
+  {Phillips}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Comprehensive
+  two-dimensional gas chromatography using an on-column thermal modulator
+  interface},}\ }\href {https://doi.org/10.1093/chromsci/29.6.227} {\bibfield
   {journal} {\bibinfo  {journal} {Journal of Chromatographic Science}\ }\textbf
-  {\bibinfo {volume} {29}},\ \bibinfo {pages} {227} (\bibinfo {year}
+  {\bibinfo {volume} {29}},\ \bibinfo {pages} {227--231} (\bibinfo {year}
   {1991})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Seeley}\ and\ \citenamefont
   {Seeley}(2013)}]{Seeley2013}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~V.}\ \bibnamefont
   {Seeley}}\ and\ \bibinfo {author} {\bibfnamefont {S.~K.}\ \bibnamefont
-  {Seeley}},\ }\href {\doibase 10.1021/ac303195u} {\bibfield  {journal}
-  {\bibinfo  {journal} {Anal. Chem.}\ }\textbf {\bibinfo {volume} {85}},\
-  \bibinfo {pages} {557} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+  {Seeley}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Multidimensional
+  gas chromatography: Fundamental advances and new applications},}\ }\href
+  {https://doi.org/10.1021/ac303195u} {\bibfield  {journal} {\bibinfo
+  {journal} {Anal. Chem.}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages}
+  {557--578} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Prebihalo}\ \emph {et~al.}(2018)\citenamefont
   {Prebihalo}, \citenamefont {Berrier}, \citenamefont {Freye}, \citenamefont
   {Bahaghighat}, \citenamefont {Moore}, \citenamefont {Pinkerton},\ and\
@@ -994,11 +1019,14 @@ laboratory supplied with consumables.
   {Berrier}}, \bibinfo {author} {\bibfnamefont {C.~E.}\ \bibnamefont {Freye}},
   \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont {Bahaghighat}},
   \bibinfo {author} {\bibfnamefont {N.~R.}\ \bibnamefont {Moore}}, \bibinfo
-  {author} {\bibfnamefont {D.~K.}\ \bibnamefont {Pinkerton}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {R.~E.}\ \bibnamefont {Synovec}},\ }\href {\doibase
-  10.1021/acs.analchem.7b04226} {\bibfield  {journal} {\bibinfo  {journal}
-  {Analytical Chemistry}\ }\textbf {\bibinfo {volume} {90}},\ \bibinfo {pages}
-  {505} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {D.~K.}\ \bibnamefont {Pinkerton}},\ and\ \bibinfo
+  {author} {\bibfnamefont {R.~E.}\ \bibnamefont {Synovec}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Multidimensional gas chromatography:
+  Advances in instrumentation, chemometrics, and applications},}\ }\href
+  {https://doi.org/10.1021/acs.analchem.7b04226} {\bibfield  {journal}
+  {\bibinfo  {journal} {Analytical Chemistry}\ }\textbf {\bibinfo {volume}
+  {90}},\ \bibinfo {pages} {505--532} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Cramers}\ \emph {et~al.}(1999)\citenamefont
   {Cramers}, \citenamefont {Janssen}, \citenamefont {{Van Deursen}},\ and\
   \citenamefont {Leclercq}}]{Cramers1999}%
@@ -1006,10 +1034,12 @@ laboratory supplied with consumables.
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
   {Cramers}}, \bibinfo {author} {\bibfnamefont {H.~G.}\ \bibnamefont
   {Janssen}}, \bibinfo {author} {\bibfnamefont {M.~M.}\ \bibnamefont {{Van
-  Deursen}}}, \ and\ \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
-  {Leclercq}},\ }\href {\doibase 10.1016/S0021-9673(99)00227-7} {\bibfield
-  {journal} {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf
-  {\bibinfo {volume} {856}},\ \bibinfo {pages} {315} (\bibinfo {year}
+  Deursen}}},\ and\ \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Leclercq}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {High-speed gas
+  chromatography: An overview of various concepts},}\ }\href
+  {https://doi.org/10.1016/S0021-9673(99)00227-7} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
+  {volume} {856}},\ \bibinfo {pages} {315--329} (\bibinfo {year}
   {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Korytár}\ \emph {et~al.}(2002)\citenamefont
   {Korytár}, \citenamefont {Janssen}, \citenamefont {Matisová},\ and\
@@ -1017,28 +1047,34 @@ laboratory supplied with consumables.
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Korytár}}, \bibinfo {author} {\bibfnamefont {H.-G.}\ \bibnamefont
-  {Janssen}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Matisová}},
-  \ and\ \bibinfo {author} {\bibfnamefont {U.~A.}\ \bibnamefont {Brinkman}},\
-  }\href {\doibase https://doi.org/10.1016/S0165-9936(02)00811-7} {\bibfield
+  {Janssen}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Matisová}},\
+  and\ \bibinfo {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont {Brinkman}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Practical fast gas
+  chromatography: methods, instrumentation and applications},}\ }\href
+  {https://doi.org/https://doi.org/10.1016/S0165-9936(02)00811-7} {\bibfield
   {journal} {\bibinfo  {journal} {TrAC Trends in Analytical Chemistry}\
-  }\textbf {\bibinfo {volume} {21}},\ \bibinfo {pages} {558 } (\bibinfo {year}
-  {2002})}\BibitemShut {NoStop}%
+  }\textbf {\bibinfo {volume} {21}},\ \bibinfo {pages} {558 -- 572} (\bibinfo
+  {year} {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Giddings}(1995)}]{Giddings1995}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
-  {Giddings}},\ }\href {\doibase 10.1016/0021-9673(95)00249-m} {\bibfield
-  {journal} {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf
-  {\bibinfo {volume} {703}},\ \bibinfo {pages} {3} (\bibinfo {year}
+  {Giddings}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Sample
+  dimensionality: A predictor of order-disorder in component peak distribution
+  in multidimensional separation},}\ }\href
+  {https://doi.org/10.1016/0021-9673(95)00249-m} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
+  {volume} {703}},\ \bibinfo {pages} {3--15} (\bibinfo {year}
   {1995})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Camenzuli}\ and\ \citenamefont
   {Schoenmakers}(2014)}]{Camenzuli2014}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
   {Camenzuli}}\ and\ \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont
-  {Schoenmakers}},\ }\href {\doibase 10.1016/j.aca.2014.05.048} {\bibfield
-  {journal} {\bibinfo  {journal} {Analytica Chimica Acta}\ }\textbf {\bibinfo
-  {volume} {838}},\ \bibinfo {pages} {93} (\bibinfo {year} {2014})}\BibitemShut
-  {NoStop}%
+  {Schoenmakers}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {A new
+  measure of orthogonality for multi-dimensional chromatography},}\ }\href
+  {https://doi.org/10.1016/j.aca.2014.05.048} {\bibfield  {journal} {\bibinfo
+  {journal} {Analytica Chimica Acta}\ }\textbf {\bibinfo {volume} {838}},\
+  \bibinfo {pages} {93--101} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {de~Koning}\ \emph {et~al.}(2004)\citenamefont
   {de~Koning}, \citenamefont {Janssen}, \citenamefont {van Deursen},\ and\
   \citenamefont {Brinkman}}]{Koning2004}%
@@ -1046,25 +1082,30 @@ laboratory supplied with consumables.
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {de~Koning}}, \bibinfo {author} {\bibfnamefont {H.-G.}\ \bibnamefont
   {Janssen}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {van
-  Deursen}}, \ and\ \bibinfo {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont
-  {Brinkman}},\ }\href {\doibase 10.1002/jssc.200301676} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Separation Science}\ }\textbf {\bibinfo
-  {volume} {27}},\ \bibinfo {pages} {397} (\bibinfo {year} {2004})}\BibitemShut
-  {NoStop}%
+  Deursen}},\ and\ \bibinfo {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont
+  {Brinkman}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Automated
+  on-line comprehensive two-dimensional {LC}{\texttimes}{GC} and
+  {LC}{\texttimes}{GC}-{ToF} {MS}: Instrument design and application to edible
+  oil and fat analysis},}\ }\href {https://doi.org/10.1002/jssc.200301676}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Separation Science}\
+  }\textbf {\bibinfo {volume} {27}},\ \bibinfo {pages} {397--409} (\bibinfo
+  {year} {2004})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Venter}\ and\ \citenamefont
   {Rohwer}(2004)}]{Venter2004}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Venter}}\ and\ \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
-  {Rohwer}},\ }\href {\doibase 10.1021/ac035538c} {\bibfield  {journal}
-  {\bibinfo  {journal} {Analytical chemistry}\ }\textbf {\bibinfo {volume}
-  {76}},\ \bibinfo {pages} {3699} (\bibinfo {year} {2004})}\BibitemShut
-  {NoStop}%
+  {Rohwer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Comprehensive
+  two-dimensional supercritical fluid and gas chromatography with independent
+  fast programmed heating of the gas chromatographic column.}}\ }\href
+  {https://doi.org/10.1021/ac035538c} {\bibfield  {journal} {\bibinfo
+  {journal} {Analytical chemistry}\ }\textbf {\bibinfo {volume} {76}},\
+  \bibinfo {pages} {3699--706} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Skoog}, \citenamefont {Holler},\ and\ \citenamefont
   {Crouch}(2007)}]{Skoog2007}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
-  {Skoog}}, \bibinfo {author} {\bibfnamefont {F.~J.}\ \bibnamefont {Holler}}, \
+  {Skoog}}, \bibinfo {author} {\bibfnamefont {F.~J.}\ \bibnamefont {Holler}},\
   and\ \bibinfo {author} {\bibfnamefont {S.~R.}\ \bibnamefont {Crouch}},\
   }\href {https://UnivofPretoria.on.worldcat.org/oclc/77224390} {\emph
   {\bibinfo {title} {Principles of instrumental analysis}}},\ \bibinfo
@@ -1075,81 +1116,98 @@ laboratory supplied with consumables.
   {Brinkman}(2003)}]{Dalluege2003}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Dallüge}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Beens}}, \
+  {Dallüge}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Beens}},\
   and\ \bibinfo {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont {Brinkman}},\
-  }\href {\doibase 10.1016/s0021-9673(03)00242-5} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
-  {volume} {1000}},\ \bibinfo {pages} {69} (\bibinfo {year}
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Comprehensive
+  two-dimensional gas chromatography: a powerful and versatile analytical
+  tool},}\ }\href {https://doi.org/10.1016/s0021-9673(03)00242-5} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf
+  {\bibinfo {volume} {1000}},\ \bibinfo {pages} {69--108} (\bibinfo {year}
   {2003})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Venter}, \citenamefont {Rohwer},\ and\ \citenamefont
   {Laubscher}(1999)}]{Venter1999}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Venter}}, \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont {Rohwer}},
-  \ and\ \bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Laubscher}},\
-  }\href {\doibase 10.1016/s0021-9673(99)00137-5} {\bibfield  {journal}
+  {Venter}}, \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont {Rohwer}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Laubscher}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Analysis of alkane, alkene,
+  aromatic and oxygenated groups in petrochemical mixtures by supercritical
+  fluid chromatography on silica gel},}\ }\href
+  {https://doi.org/10.1016/s0021-9673(99)00137-5} {\bibfield  {journal}
   {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
-  {volume} {847}},\ \bibinfo {pages} {309} (\bibinfo {year}
+  {volume} {847}},\ \bibinfo {pages} {309--321} (\bibinfo {year}
   {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Blumberg}\ and\ \citenamefont
   {Klee}(2000)}]{Blumberg2000}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~M.}\ \bibnamefont
   {Blumberg}}\ and\ \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
-  {Klee}},\ }\href {\doibase
-  10.1002/1520-667x(2000)12:9<508::aid-mcs5>3.0.co;2-y} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Microcolumn Separations}\ }\textbf {\bibinfo
-  {volume} {12}},\ \bibinfo {pages} {508} (\bibinfo {year} {2000})}\BibitemShut
-  {NoStop}%
+  {Klee}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Optimal heating
+  rate in gas chromatography},}\ }\href
+  {https://doi.org/10.1002/1520-667x(2000)12:9<508::aid-mcs5>3.0.co;2-y}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Microcolumn
+  Separations}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {508--514}
+  (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wang}, \citenamefont {Tolley},\ and\ \citenamefont
   {Lee}(2012)}]{Wang2012}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Wang}}, \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont {Tolley}}, \
-  and\ \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont {Lee}},\ }\href
-  {\doibase 10.1016/j.chroma.2012.05.021} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo {volume}
-  {1261}},\ \bibinfo {pages} {46} (\bibinfo {year} {2012})}\BibitemShut
-  {NoStop}%
+  {Wang}}, \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont {Tolley}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont {Lee}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Gas chromatography using
+  resistive heating technology},}\ }\href
+  {https://doi.org/10.1016/j.chroma.2012.05.021} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
+  {volume} {1261}},\ \bibinfo {pages} {46--57} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Jacobs}, \citenamefont {Hilder},\ and\ \citenamefont
   {Shellie}(2013)}]{Jacobs2013}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont
-  {Jacobs}}, \bibinfo {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Hilder}},
-  \ and\ \bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Shellie}},\
-  }\href {\doibase 10.1016/j.aca.2013.04.063} {\bibfield  {journal} {\bibinfo
+  {Jacobs}}, \bibinfo {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Hilder}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont {Shellie}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Applications of resistive
+  heating in gas chromatography: A review},}\ }\href
+  {https://doi.org/10.1016/j.aca.2013.04.063} {\bibfield  {journal} {\bibinfo
   {journal} {Analytica Chimica Acta}\ }\textbf {\bibinfo {volume} {803}},\
-  \bibinfo {pages} {2} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+  \bibinfo {pages} {2--14} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Chow}\ and\ \citenamefont
   {Górecki}(2017)}]{Chow2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-Y.~J.}\
   \bibnamefont {Chow}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Górecki}},\ }\href {\doibase 10.1021/acs.analchem.7b02134} {\bibfield
-  {journal} {\bibinfo  {journal} {Analytical Chemistry}\ }\textbf {\bibinfo
-  {volume} {89}},\ \bibinfo {pages} {8207} (\bibinfo {year}
+  {Górecki}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Temperature
+  programming of the second dimension in comprehensive two-dimensional gas
+  chromatography},}\ }\href {https://doi.org/10.1021/acs.analchem.7b02134}
+  {\bibfield  {journal} {\bibinfo  {journal} {Analytical Chemistry}\ }\textbf
+  {\bibinfo {volume} {89}},\ \bibinfo {pages} {8207--8211} (\bibinfo {year}
   {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Venter}, \citenamefont {Makgwane},\ and\
   \citenamefont {Rohwer}(2006)}]{Venter2006}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Venter}}, \bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont
-  {Makgwane}}, \ and\ \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
-  {Rohwer}},\ }\href {\doibase 10.1021/ac051693a} {\bibfield  {journal}
-  {\bibinfo  {journal} {Analytical Chemistry}\ }\textbf {\bibinfo {volume}
-  {78}},\ \bibinfo {pages} {2051} (\bibinfo {year} {2006})}\BibitemShut
-  {NoStop}%
+  {Makgwane}},\ and\ \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
+  {Rohwer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Group-type
+  analysis of oxygenated compounds with a silica gel porous layer open tubular
+  column and comprehensive two-dimensional supercritical fluid and gas
+  chromatography},}\ }\href {https://doi.org/10.1021/ac051693a} {\bibfield
+  {journal} {\bibinfo  {journal} {Analytical Chemistry}\ }\textbf {\bibinfo
+  {volume} {78}},\ \bibinfo {pages} {2051--2054} (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Luong}\ \emph {et~al.}(2006)\citenamefont {Luong},
   \citenamefont {Gras}, \citenamefont {Mustacich},\ and\ \citenamefont
   {Cortes}}]{Luong2006}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Luong}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Gras}},
-  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mustacich}}, \ and\
-  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Cortes}},\ }\href
-  {\doibase 10.1093/chromsci/44.5.253} {\bibfield  {journal} {\bibinfo
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Mustacich}},\ and\
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Cortes}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Low thermal mass gas chromatography:
+  Principles and applications},}\ }\href
+  {https://doi.org/10.1093/chromsci/44.5.253} {\bibfield  {journal} {\bibinfo
   {journal} {Journal of Chromatographic Science}\ }\textbf {\bibinfo {volume}
-  {44}},\ \bibinfo {pages} {253} (\bibinfo {year} {2006})}\BibitemShut
+  {44}},\ \bibinfo {pages} {253--261} (\bibinfo {year} {2006})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {{Zip Scientific}}(2008)}]{ZipScientific2008}%
   \BibitemOpen
@@ -1164,12 +1222,14 @@ laboratory supplied with consumables.
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Dallüge}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Ou-Aissa}},
   \bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont {Vreuls}}, \bibinfo
-  {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont {Brinkman}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Veraart}},\ }\href {\doibase
-  10.1002/(SICI)1521-4168(19990801)22:8<459::AID-JHRC459>3.0.CO;2-G} {\bibfield
-   {journal} {\bibinfo  {journal} {Journal of High Resolution Chromatography}\
-  }\textbf {\bibinfo {volume} {22}},\ \bibinfo {pages} {459} (\bibinfo {year}
-  {1999})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {U.~A.~T.}\ \bibnamefont {Brinkman}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Veraart}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Fast temperature programming in gas
+  chromatography using resistive heating},}\ }\href
+  {https://doi.org/10.1002/(SICI)1521-4168(19990801)22:8<459::AID-JHRC459>3.0.CO;2-G}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of High Resolution
+  Chromatography}\ }\textbf {\bibinfo {volume} {22}},\ \bibinfo {pages}
+  {459--464} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{VICI AG International}}(2019)}]{VICIAGI2019}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {{VICI AG
@@ -1182,35 +1242,56 @@ laboratory supplied with consumables.
   {Peacock}},\ }\href {http://www.pidtuning.net} {\enquote {\bibinfo {title}
   {{PID} tuning blueprint},}\ }\bibinfo {howpublished} {Internet} (\bibinfo
   {year} {2008})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Contreras}\ \emph {et~al.}(2013)\citenamefont
+  {Contreras}, \citenamefont {Rockwood}, \citenamefont {Tolley},\ and\
+  \citenamefont {Lee}}]{Contreras2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Contreras}}, \bibinfo {author} {\bibfnamefont {A.~L.}\ \bibnamefont
+  {Rockwood}}, \bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont
+  {Tolley}},\ and\ \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont
+  {Lee}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Peak sweeping and
+  gating using thermal gradient gas chromatography},}\ }\href
+  {https://doi.org/10.1016/j.chroma.2013.01.010} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
+  {volume} {1278}},\ \bibinfo {pages} {160--165} (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zheng}\ \emph {et~al.}(2012)\citenamefont {Zheng},
   \citenamefont {Bo}, \citenamefont {Liu},\ and\ \citenamefont
   {Wang}}]{Zheng2012}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
   {Zheng}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Bo}}, \bibinfo
-  {author} {\bibfnamefont {Y.}~\bibnamefont {Liu}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {W.}~\bibnamefont {Wang}},\ }\href {\doibase
-  10.1016/j.cagd.2012.03.004} {\bibfield  {journal} {\bibinfo  {journal}
-  {Computer Aided Geometric Design}\ }\textbf {\bibinfo {volume} {29}},\
-  \bibinfo {pages} {448} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Liu}},\ and\ \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Wang}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Fast b-spline curve fitting by l-{BFGS}},}\ }\href
+  {https://doi.org/10.1016/j.cagd.2012.03.004} {\bibfield  {journal} {\bibinfo
+  {journal} {Computer Aided Geometric Design}\ }\textbf {\bibinfo {volume}
+  {29}},\ \bibinfo {pages} {448--462} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Possolo}\ and\ \citenamefont
   {Iyer}(2017)}]{Possolo2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
   {Possolo}}\ and\ \bibinfo {author} {\bibfnamefont {H.~K.}\ \bibnamefont
-  {Iyer}},\ }\href {\doibase 10.1063/1.4974274} {\bibfield  {journal} {\bibinfo
-   {journal} {Review of Scientific Instruments}\ }\textbf {\bibinfo {volume}
+  {Iyer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Invited article:
+  Concepts and tools for the evaluation of measurement uncertainty},}\ }\href
+  {https://doi.org/10.1063/1.4974274} {\bibfield  {journal} {\bibinfo
+  {journal} {Review of Scientific Instruments}\ }\textbf {\bibinfo {volume}
   {88}},\ \bibinfo {pages} {011301} (\bibinfo {year} {2017})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Shellie}, \citenamefont {Xie},\ and\ \citenamefont
   {Marriott}(2002)}]{Shellie2002}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont
-  {Shellie}}, \bibinfo {author} {\bibfnamefont {L.-L.}\ \bibnamefont {Xie}}, \
+  {Shellie}}, \bibinfo {author} {\bibfnamefont {L.-L.}\ \bibnamefont {Xie}},\
   and\ \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Marriott}},\
-  }\href {\doibase 10.1016/s0021-9673(02)00961-5} {\bibfield  {journal}
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Retention time
+  reproducibility in comprehensive two-dimensional gas chromatography using
+  cryogenic modulation},}\ }\href
+  {https://doi.org/10.1016/s0021-9673(02)00961-5} {\bibfield  {journal}
   {\bibinfo  {journal} {Journal of Chromatography A}\ }\textbf {\bibinfo
-  {volume} {968}},\ \bibinfo {pages} {161} (\bibinfo {year}
+  {volume} {968}},\ \bibinfo {pages} {161--170} (\bibinfo {year}
   {2002})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Smith}\ \emph {et~al.}(2001)\citenamefont {Smith},
   \citenamefont {Hyytiänen}, \citenamefont {Felipe},\ and\ \citenamefont
@@ -1218,13 +1299,14 @@ laboratory supplied with consumables.
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont
   {Smith}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hyytiänen}},
-  \bibinfo {author} {\bibfnamefont {A.~V.}\ \bibnamefont {Felipe}}, \ and\
-  \bibinfo {author} {\bibfnamefont {P.~M.}\ \bibnamefont {Morris}},\ }\href
-  {\doibase
-  https://doi.org/10.1002/1615-9314(20010301)24:3%3C208::AID-JSSC208%3E3.0.CO;2-P}
+  \bibinfo {author} {\bibfnamefont {A.~V.}\ \bibnamefont {Felipe}},\ and\
+  \bibinfo {author} {\bibfnamefont {P.~M.}\ \bibnamefont {Morris}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {High resolution packed column
+  supercritical fluid chromatography of fatty acid methyl esters},}\ }\href
+  {https://doi.org/https://doi.org/10.1002/1615-9314(20010301)24:3%3C208::AID-JSSC208%3E3.0.CO;2-P}
   {\bibfield  {journal} {\bibinfo  {journal} {Journal of Separation Science}\
-  }\textbf {\bibinfo {volume} {24}},\ \bibinfo {pages} {208} (\bibinfo {year}
-  {2001})}\BibitemShut {NoStop}%
+  }\textbf {\bibinfo {volume} {24}},\ \bibinfo {pages} {208--212} (\bibinfo
+  {year} {2001})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {AOCS}(2017)}]{AOCS2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {AOCS}},\ }\enquote
@@ -1235,7 +1317,8 @@ laboratory supplied with consumables.
   ed.\BibitemShut {Stop}%
 \end{thebibliography}%
 
-
+% BBL file contents end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
 %

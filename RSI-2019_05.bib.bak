@@ -218,7 +218,7 @@ effects were limited by increases in the back pressure.},
 
 @InProceedings{Watson1991,
   author    = {G. Watson and W. Horton and E. Staples},
-  title     = {Gas chromatography utilizing SAW sensors},
+  title     = {Gas chromatography utilizing {SAW} sensors},
   booktitle = {IEEE 1991 Ultrasonics Symposium,},
   year      = {1991},
   volume    = {1},
@@ -231,7 +231,7 @@ effects were limited by increases in the back pressure.},
 
 @InProceedings{He2014,
   author    = {S. He and J. Liu and M. Liu},
-  title     = {Research progress of saw gas charomatography},
+  title     = {Research progress of {SAW} gas charomatography},
   booktitle = {Proceedings of the 2014 Symposium on Piezoelectricity, Acoustic Waves, and Device Applications},
   year      = {2014},
   month     = {Oct},
@@ -316,7 +316,7 @@ effects were limited by increases in the back pressure.},
 }
 
 @Article{Korytar2002,
-  author   = {Peter Korytár and Hans-Gerd Janssen and Eva Matisová and Udo A.Th. Brinkman},
+  author   = {Peter Korytár and Hans-Gerd Janssen and Eva Matisová and Udo A. Th. Brinkman},
   title    = {Practical fast gas chromatography: methods, instrumentation and applications},
   journal  = {TrAC Trends in Analytical Chemistry},
   year     = {2002},
@@ -1913,6 +1913,18 @@ aerospace, personal power and micro power generation.},
   __markedentry = {[fskdm:6]},
   abstract      = {We propose a fast method for fitting planar B-spline curves to unorganized data points. In traditional methods, optimization of control points and foot points are performed in two alternating time-consuming steps in every iteration: 1) control points are updated by setting up and solving a linear system of equations; and 2) foot points are computed by projecting each data point onto a B-spline curve. Our method uses the L-BFGS optimization method to optimize control points and foot points simultaneously and therefore it does not need to solve a linear system of equations or performing foot point projection in every iteration. As a result, the proposed method is much faster than existing methods.},
   publisher     = {Elsevier {BV}},
+}
+
+@Article{Contreras2013,
+  author    = {Jesse A. Contreras and Alan L. Rockwood and H. Dennis Tolley and Milton L. Lee},
+  title     = {Peak sweeping and gating using thermal gradient gas chromatography},
+  journal   = {Journal of Chromatography A},
+  year      = {2013},
+  volume    = {1278},
+  month     = {feb},
+  pages     = {160--165},
+  doi       = {10.1016/j.chroma.2013.01.010},
+  publisher = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

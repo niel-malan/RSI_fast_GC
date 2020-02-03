@@ -1,0 +1,112 @@
+% Title:    A LaTeX Template For Responses To a Referees' Reports
+% Author:   Petr Zemek <s3rvac@gmail.com>
+% Homepage: https://blog.petrzemek.net/2016/07/17/latex-template-for-responses-to-referees-reports/
+% License:  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+\documentclass[10pt]{article}
+
+% Allow Unicode input (alternatively, you can use XeLaTeX or LuaLaTeX)
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{eurosym}
+\usepackage{textcomp}
+
+\usepackage{microtype,xparse,tcolorbox}
+\newenvironment{reviewer-comment }{}{}
+\tcbuselibrary{skins}
+\tcolorboxenvironment{reviewer-comment }{empty,
+  left = 1em, top = 1ex, bottom = 1ex,
+  borderline west = {2pt} {0pt} {black!20},
+}
+\ExplSyntaxOn
+\NewDocumentEnvironment {response} { +m O{black!20} } {
+  \IfValueT {#1} {
+    \begin{reviewer-comment~}
+      \setlength\parindent{2em}
+      \noindent
+      \ttfamily #1
+    \end{reviewer-comment~}
+  }
+  \par\noindent\ignorespaces
+} { \bigskip\par }
+
+\NewDocumentCommand \Reviewer { m } {
+  \section*{Comments~by~Reviewer~#1}
+}
+\ExplSyntaxOff
+\AtBeginDocument{\maketitle\thispagestyle{empty}\noindent}
+
+% You can get probably get rid of these definitions:
+\newcommand\meta[1]{$\langle\hbox{#1}\rangle$}
+\newcommand\PaperTitle[1]{``\textit{#1}''}
+
+\title{Response letter of \meta{RSI19-AR-01677} \\
+  Based on the Referees' Report}
+\author{D. Malan \and S.J. van der Walt \and E.R. Rohwer}
+\date{\today}
+
+\begin{document}
+
+\noindent
+\textbf{Chin-Tu Chen}\\
+\textbf{Associate Editor}\\
+\textbf{Review of Scientific Instruments}
+
+\medskip
+
+\begin{quote}
+Revision of the paper \meta{RSI19-AR-01677} submitted to the Review of
+Scientific Instruments, entitled \PaperTitle{A high-repetition-rate, fast
+temperature programmed gas chromatograph and its on-line coupling to a
+supercritical fluid chromatograph (SFC×GC)}, based on the referees' report.
+\end{quote}
+
+\medskip
+
+\noindent
+Dear Chin-Tu Chen: 
+
+Thank you for your email dated 30 January 2020 enclosing the reviewers’ comments. We
+have carefully reviewed the comments and have revised the manuscript accordingly. Our
+responses are given in a point-by-point manner below. 
+
+We hope the revised version is now suitable for publication and look forward to hearing from you
+in due course.
+
+\vspace{\baselineskip}
+
+\noindent
+Yours sincerely,\\
+D. Malan\\
+Department of Chemistry\\
+University of Pretoria
+
+
+\Reviewer{\#1}
+\begin{response}{will [give an] acceptable}
+ 	The sentence was corrected.
+\end{response}
+
+\begin{response}{middle paragraph. The sentence construction is complicated with the nested parentheses.
+} 
+The parentheses were removed and a sentence providing more detail was added.
+\end{response}
+
+\begin{response}{Also the text describes a micro union brazed onto the block,
+but the figure shows a drilled and tapped hole.
+}  Although the relevant figure was intended to be conceptual in nature, we
+agree that a difference between the text and the figure can be confusing. The
+figure was changed to match the text.
+\end{response}
+
+\begin{response}{p11 digital to analog converter converter . converter is repeated. 
+	}  The repeated word was removed. 
+\end{response}
+
+\begin{response}{p15. Chromatographically, would it be better if the warmer side of the column was towards the detector or towards the inlet?
+	}  
+	A sentence and a citation was added to show a possible benefit if the warmer end of the column was towards the inlet.
+\end{response}
+
+
+\end{document}
+
